@@ -1,21 +1,8 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
 # 🌍 WorldWise
 
 > A smart travel tracking app to log the places you've been and plan your future journeys—built with React, styled with custom UI, and powered by geolocation APIs. Part of my React learning journey 🚀
 
-![WorldWise Banner](https://github.com/bharathraj1614/WorldWise/public/logo.png)
+![WorldWise Banner](https://github.com/bharathraj1614/WorldWise/blob/main/public/logo.png)
 
 ---
 
@@ -75,9 +62,9 @@ npm run dev
 
 ## 📸 Screenshots
 
-| Map View                                                                | Add City                                                             | Logged Cities                                                            |
-| ----------------------------------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| ![map](https://github.com/bharathraj1614/WorldWise/assets/CityList.png) | ![form](https://github.com/bharathraj1614/WorldWise/assets/Form.png) | ![list](https://github.com/bharathraj1614/WorldWise/assets/CityList.png) |
+| Map View                                                                          | Add City                                                                           | Logged Cities                                                                          |
+| --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| ![map](https://github.com/bharathraj1614/WorldWise/blob/main/src/assets/City.png) | ![form](https://github.com/bharathraj1614/WorldWise/blob/main/src/assets/Form.png) | ![list](https://github.com/bharathraj1614/WorldWise/blob/main/src/assets/CityList.png) |
 
 ---
 
