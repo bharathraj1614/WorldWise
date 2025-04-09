@@ -59,6 +59,30 @@
         "lat": "23.30892180176072",
         "lng": "-102.3076724867495"
       }
+    },
+    {
+      "id": "4eb4",
+      "cityName": "Township of Banner",
+      "country": "United States of America (the)",
+      "emoji": "us",
+      "date": "2025-04-09T15:12:56.872Z",
+      "notes": "",
+      "position": {
+        "lat": "43.43603349226927",
+        "lng": "-99.97684749871308"
+      }
+    },
+    {
+      "id": "d8bc",
+      "cityName": "Calimete",
+      "country": "Cuba",
+      "emoji": "cu",
+      "date": "2025-04-09T15:13:21.390Z",
+      "notes": "Nice Place",
+      "position": {
+        "lat": "22.59938088099207",
+        "lng": "-80.72753906250001"
+      }
     }
   ],
   "userDatas": [
