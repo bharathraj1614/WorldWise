@@ -1,0 +1,80 @@
+{
+  "cities": [
+    {
+      "id": "4f14",
+      "cityName": "Heihe",
+      "country": "China",
+      "emoji": "cn",
+      "date": "2025-04-09T14:40:38.194Z",
+      "notes": "",
+      "position": {
+        "lat": "48.711457599308496",
+        "lng": "125.66950270829604"
+      }
+    },
+    {
+      "id": "c97d",
+      "cityName": "Oppdal",
+      "country": "Norway",
+      "emoji": "no",
+      "date": "2025-04-09T14:40:42.498Z",
+      "notes": "",
+      "position": {
+        "lat": "62.69379259217829",
+        "lng": "9.919384036353431"
+      }
+    },
+    {
+      "id": "4c47",
+      "cityName": "Nuuk",
+      "country": "Greenland",
+      "emoji": "gl",
+      "date": "2025-04-09T14:40:55.970Z",
+      "notes": "",
+      "position": {
+        "lat": "67.49920565271512",
+        "lng": "-40.94134004539148"
+      }
+    },
+    {
+      "id": "14e2",
+      "cityName": "Wood Buffalo",
+      "country": "Canada",
+      "emoji": "ca",
+      "date": "2025-04-09T14:41:01.861Z",
+      "notes": "",
+      "position": {
+        "lat": "59.20068023454637",
+        "lng": "-110.18916638517659"
+      }
+    },
+    {
+      "id": "db39",
+      "cityName": "Villa de Cos",
+      "country": "Mexico",
+      "emoji": "mx",
+      "date": "2025-04-09T14:41:07.605Z",
+      "notes": "",
+      "position": {
+        "lat": "23.30892180176072",
+        "lng": "-102.3076724867495"
+      }
+    }
+  ],
+  "userDatas": [
+    {
+      "name": "Walter White",
+      "email": "cookingwithchemistry@methlab.com",
+      "password": "HeisenbergRocks123",
+      "avatar": "https://imgs.search.brave.com/3Eu2s8PuAo8xXYs_3pM4vj9wuUYa4_1bg0lCWeZZkvQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/MC8wMy9XYWx0ZXJf/V2hpdGVfUzVCLnBu/Zy81MTJweC1XYWx0/ZXJfV2hpdGVfUzVC/LnBuZw",
+      "id": "cookingwithchemistry@methlab.com"
+    },
+    {
+      "name": "Tony Stark",
+      "email": "geniusbillionaireplayboyphilanthropist@starkindustries.com",
+      "password": "IronManLovesYou3000",
+      "avatar": "https://avatarfiles.alphacoders.com/358/thumb-1920-358388.jpeg",
+      "id": "geniusbillionaireplayboyphilanthropist@starkindustries.com"
+    }
+  ]
+}
