@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "id": "4f14",
-      "cityName": "Heihe",
-      "country": "China",
-      "emoji": "cn",
-      "date": "2025-04-09T14:40:38.194Z",
-      "notes": "",
-      "position": {
-        "lat": "48.711457599308496",
-        "lng": "125.66950270829604"
-      }
-    },
-    {
       "id": "c97d",
       "cityName": "Oppdal",
       "country": "Norway",
@@ -82,6 +70,42 @@
       "position": {
         "lat": "22.59938088099207",
         "lng": "-80.72753906250001"
+      }
+    },
+    {
+      "id": "71c1",
+      "cityName": "Bengaluru",
+      "country": "India",
+      "emoji": "in",
+      "date": "2025-04-10T14:24:56.535Z",
+      "notes": "Aruma da ",
+      "position": {
+        "lat": "12.942666287271544",
+        "lng": "77.574462890625"
+      }
+    },
+    {
+      "id": "f9a9",
+      "cityName": "Laccadive Sea",
+      "country": "India",
+      "emoji": "in",
+      "date": "2025-04-10T14:26:43.066Z",
+      "notes": "Noice",
+      "position": {
+        "lat": "12.854504625359606",
+        "lng": "74.762989024293"
+      }
+    },
+    {
+      "id": "7c94",
+      "cityName": "Pennagaram",
+      "country": "India",
+      "emoji": "in",
+      "date": "2025-04-10T14:27:38.403Z",
+      "notes": "",
+      "position": {
+        "lat": "12.103178538442178",
+        "lng": "77.82214767210147"
       }
     }
   ],
