@@ -61,18 +61,6 @@
       }
     },
     {
-      "id": "d8bc",
-      "cityName": "Calimete",
-      "country": "Cuba",
-      "emoji": "cu",
-      "date": "2025-04-09T15:13:21.390Z",
-      "notes": "Nice Place",
-      "position": {
-        "lat": "22.59938088099207",
-        "lng": "-80.72753906250001"
-      }
-    },
-    {
       "id": "71c1",
       "cityName": "Bengaluru",
       "country": "India",
@@ -106,6 +94,18 @@
       "position": {
         "lat": "12.103178538442178",
         "lng": "77.82214767210147"
+      }
+    },
+    {
+      "id": "1dbf",
+      "cityName": "Kallakurichi",
+      "country": "India",
+      "emoji": "in",
+      "date": "2025-04-14T09:54:35.833Z",
+      "notes": "",
+      "position": {
+        "lat": "11.73565941427654",
+        "lng": "78.961683564022"
       }
     }
   ],
