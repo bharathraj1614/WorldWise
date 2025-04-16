@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <FakeAuthContextProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/WorldWise">
           <Suspense fallback={<SpinnerFullPage />}>
             <Routes>
               <Route index element={<Homepage />} />
