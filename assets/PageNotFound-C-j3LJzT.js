@@ -1,0 +1,1 @@
+import{j as e}from"./index-DwZspN8_.js";function n(){return e.jsx("div",{style:{backgroundColor:"green",height:300,display:"flex",alignItems:"center",justifyContent:"center"},children:e.jsx("h1",{style:{fontSize:100},children:"Page not found 😢"})})}export{n as default};
