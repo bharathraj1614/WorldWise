@@ -1,12 +1,15 @@
-import { createContext, useContext, useReducer } from "react";
-
-const API_URL = "http://localhost:9000";
+import {
+  createContext,
+  useContext,
+  useReducer,
+  useEffect,
+  useState,
+} from "react";
 
 const FakeAuthContext = createContext();
 
 function useAuthProvider() {
-  const context = useContext(FakeAuthContext);
-  return context;
+  return useContext(FakeAuthContext);
 }
 
 const FakeUserData = {
@@ -28,22 +31,17 @@ function reducer(state, action) {
     case "login":
       return {
         ...state,
-        userData: {
-          ...action.payLoad,
-        },
+        userData: { ...action.payLoad },
         isAuthenticated: true,
         error: null,
       };
     case "logout":
-      return {
-        ...initialState,
-      };
+      return initialState;
     case "rejected":
       return {
         ...state,
         error: action.payLoad,
       };
-
     default:
       throw new Error("Unknown action type");
   }
@@ -55,11 +53,22 @@ function FakeAuthContextProvider({ children }) {
     initialState
   );
 
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      dispatch({ type: "login", payLoad: JSON.parse(storedUser) });
+    }
+    setIsLoading(false);
+  }, []);
+
   function login(formData) {
     if (
       formData.email === FakeUserData.email &&
       formData.password === FakeUserData.password
     ) {
+      localStorage.setItem("user", JSON.stringify(FakeUserData));
       dispatch({ type: "login", payLoad: FakeUserData });
     } else {
       dispatch({
@@ -70,12 +79,13 @@ function FakeAuthContextProvider({ children }) {
   }
 
   function logout() {
+    localStorage.removeItem("user");
     dispatch({ type: "logout" });
   }
 
   return (
     <FakeAuthContext.Provider
-      value={{ userData, isAuthenticated, login, logout, error }}
+      value={{ userData, isAuthenticated, login, logout, error, isLoading }}
     >
       {children}
     </FakeAuthContext.Provider>

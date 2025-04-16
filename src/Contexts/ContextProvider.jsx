@@ -64,20 +64,20 @@ function ProvideContext({ children }) {
     initialState
   );
 
-  useEffect(function () {
-    async function fetchData() {
-      try {
-        dispatch({ type: "loading" });
-        const res = await fetch(`${API_URL}/cities`);
-        const data = await res.json();
-        dispatch({ type: "cities/loaded", payLoad: data });
-      } catch {
-        dispatch({
-          type: "rejected",
-          payLoad: "There was an error while loading cities :(",
-        });
-      }
+  async function fetchData() {
+    try {
+      dispatch({ type: "loading" });
+      const res = await fetch(`${API_URL}/cities`);
+      const data = await res.json();
+      dispatch({ type: "cities/loaded", payLoad: data });
+    } catch {
+      dispatch({
+        type: "rejected",
+        payLoad: "There was an error while loading cities :(",
+      });
     }
+  }
+  useEffect(function () {
     fetchData();
   }, []);
 
@@ -124,6 +124,7 @@ function ProvideContext({ children }) {
       });
       const data = await res.json();
       dispatch({ type: "city/deleted", payLoad: data.id });
+      fetchData();
     } catch {
       dispatch({
         type: "rejected",
