@@ -28,27 +28,29 @@ function App() {
     <>
       <FakeAuthContextProvider>
         <Suspense fallback={<SpinnerFullPage />}>
-          <Routes>
-            <Route index element={<Homepage />} />
-            <Route
-              path="app"
-              element={
-                <ProtectedRoute>
-                  <AppLayout />
-                </ProtectedRoute>
-              }
-            >
-              <Route path="cities" element={<CityList />} />
-              <Route path="form" element={<Form />} />
-              <Route path="countries" element={<CountryList />} />
-              <Route index element={<Navigate replace to="cities" />} />
-              <Route path="cities/:id" element={<City />} />
-            </Route>
-            <Route path="pricing" element={<Pricing />} />
-            <Route path="product" element={<Product />} />
-            <Route path="login" element={<Login />} />
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>
+          <BrowserRouter>
+            <Routes>
+              <Route index element={<Homepage />} />
+              <Route
+                path="app"
+                element={
+                  <ProtectedRoute>
+                    <AppLayout />
+                  </ProtectedRoute>
+                }
+              >
+                <Route path="cities" element={<CityList />} />
+                <Route path="form" element={<Form />} />
+                <Route path="countries" element={<CountryList />} />
+                <Route index element={<Navigate replace to="cities" />} />
+                <Route path="cities/:id" element={<City />} />
+              </Route>
+              <Route path="pricing" element={<Pricing />} />
+              <Route path="product" element={<Product />} />
+              <Route path="login" element={<Login />} />
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
+          </BrowserRouter>
         </Suspense>
       </FakeAuthContextProvider>
     </>
