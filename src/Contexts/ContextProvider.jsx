@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { createContext } from "react";
 
 const CityContext = createContext();
-const API_URL = "http://localhost:9000";
+const API_URL = "https://json-server-app-7b77.onrender.com";
 
 function useCityContext() {
   const context = useContext(CityContext);

@@ -1,4 +1,5 @@
 {
+  "homepage": "https://bharathraj1614.github.io/WorldWise/",
   "name": "world-wise",
   "private": true,
   "version": "0.0.0",
@@ -6,6 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "json-server --watch src/data/db.json --port 9000"

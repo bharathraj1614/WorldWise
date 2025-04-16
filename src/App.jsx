@@ -27,8 +27,8 @@ function App() {
   return (
     <>
       <FakeAuthContextProvider>
-        <Suspense fallback={<SpinnerFullPage />}>
-          <BrowserRouter>
+        <BrowserRouter>
+          <Suspense fallback={<SpinnerFullPage />}>
             <Routes>
               <Route index element={<Homepage />} />
               <Route
@@ -50,8 +50,8 @@ function App() {
               <Route path="login" element={<Login />} />
               <Route path="*" element={<PageNotFound />} />
             </Routes>
-          </BrowserRouter>
-        </Suspense>
+          </Suspense>
+        </BrowserRouter>
       </FakeAuthContextProvider>
     </>
   );
